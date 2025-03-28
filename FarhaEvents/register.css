@@ -1,0 +1,119 @@
+:root{
+    --backgroundColor : #F5F5F5 ;
+    --textColor : #222222 ;
+    --MainBtnColor : #3498DB ;
+    --SecondBtnColor : #E74C3C ;
+    --SecondBtnColorHover : #C0392B ;
+    --HeaderBackground : #FFFFFF ;
+}
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins/Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins/Poppins-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter/static/Inter_18pt-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: var(--backgroundColor);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    background-color: var(--backgroundColor);
+}
+
+.formContainer{
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--MainBtnColor);
+    gap: 20px;
+
+}
+
+.formContainer h2{
+
+    font-family: 'Poppins';
+    color: white;
+    text-transform: uppercase;
+    font-size: 32px;
+
+}
+
+.formContainer form {
+
+    width: 35%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: var(--HeaderBackground);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+
+}
+
+.formContainer form #errMessage{
+
+    color: red;
+
+}
+
+
+.formContainer form input{
+
+    width: 80%;
+    height: 35px;
+    padding: 0 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    color: var(--MainBtnColor);
+    outline: none;
+    font-family: 'Poppins';
+
+}
+
+.formContainer form button{
+
+    width: 80%;
+    height: 35px;
+    margin-top: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--MainBtnColor);
+    color: white;
+
+}

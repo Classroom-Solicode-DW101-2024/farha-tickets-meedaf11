@@ -1,0 +1,101 @@
+:root{
+    --backgroundColor : #F5F5F5 ;
+    --textColor : #222222 ;
+    --MainBtnColor : #3498DB ;
+    --SecondBtnColor : #E74C3C ;
+    --SecondBtnColorHover : #C0392B ;
+    --HeaderBackground : #FFFFFF ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins/Poppins-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins/Poppins-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('fonts/Inter/static/Inter_18pt-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+#body1 {
+    height: 100%;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--backgroundColor);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+aside {
+    width: 18%;
+    background-color: var(--MainBtnColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+    height: 100%;
+}
+
+aside .profileTitle {
+    width: 100%;
+    text-align: center;
+    color: var(--backgroundColor);
+    font-family: 'Poppins';
+}
+
+aside hr {
+    width: 100%;
+    background-color: var(--backgroundColor);
+    height: 2px;
+    border: none;
+}
+
+aside a {
+    width: 50%;
+    text-decoration: none;
+    color: var(--backgroundColor);
+    font-family: 'Poppins';
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+aside a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.MainProfileSection {
+    width: 82%;
+    margin-left: 18%;
+}
+

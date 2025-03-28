@@ -1,0 +1,214 @@
+/* event_details.css */
+
+/* General styles and reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container styling */
+.event-details-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 0 0 30px 0;
+}
+
+/* Event title */
+.event-details-container h1 {
+    font-size: 28px;
+    padding: 25px 30px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Event image */
+.event-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.event-image img:hover {
+    transform: scale(1.03);
+}
+
+/* Event description */
+.event-description {
+    padding: 0 30px;
+    margin-bottom: 30px;
+}
+
+.event-description p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.event-description p:first-child {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.event-description p strong {
+    color: #333;
+    font-weight: 600;
+}
+
+/* Form styling */
+.detailsForm {
+    background-color: #f9f9f9;
+    padding: 25px 30px;
+    border-radius: 8px;
+    margin: 0 30px;
+    border: 1px solid #eee;
+}
+
+.detailsForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #444;
+}
+
+.detailsForm input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s ease;
+}
+
+.detailsForm input[type="number"]:focus {
+    border-color: #e74c3c;
+    outline: none;
+}
+
+.detailsForm button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.detailsForm button:hover {
+    background-color: #c0392b;
+}
+
+/* Sold out message */
+p:last-child {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 30px;
+    border: 1px solid #eee;
+}
+
+.availablePlacesP {
+    background-color: #f0f8ff; /* Light blue background */
+    color: #2c3e50; /* Dark blue text */
+    padding: 12px 20px;
+    margin: 0 30px 20px;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    border-left: 4px solid #3498db; /* Blue accent border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .event-details-container {
+        margin: 20px;
+        width: auto;
+    }
+    
+    .event-image {
+        height: 300px;
+    }
+    
+    .event-details-container h1 {
+        font-size: 24px;
+        padding: 20px;
+    }
+    
+    form {
+        padding: 20px;
+        margin: 0 20px;
+    }
+}
+
+/* Custom number input styling */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    opacity: 1;
+    height: 30px;
+}
+
+/* Price display if you want to add it later */
+.price-info {
+    margin: 0 30px 25px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #e74c3c;
+}
+
+.price-info p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.price-info .total {
+    font-weight: bold;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+/* Tickets expired message styling */
+.tickets-expired {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 30px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    color: #888;
+    font-size: 18px;
+    font-weight: bold;
+}
